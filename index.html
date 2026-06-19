@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>自分用メモ帳アプリ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>自分用メモ帳</h1>
+      <p>思いついたことをすぐ保存できます</p>
+    </header>
+
+    <section class="memo-form">
+      <input id="memoTitle" type="text" placeholder="タイトル">
+      <textarea id="memoText" placeholder="メモ内容を書いてください"></textarea>
+      <button id="saveButton">メモを保存</button>
+    </section>
+
+    <section class="memo-tools">
+      <p>メモ数：<span id="memoCount">0</span>件</p>
+      <button id="clearAllButton">全て削除</button>
+    </section>
+
+    <section id="memoList" class="memo-list"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
